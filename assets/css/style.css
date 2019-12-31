@@ -396,3 +396,16 @@ header label {
     background: #F2B93E!important;
     border-color: #F2B93E!important;
 }
+
+/* about-section */
+
+.about-section{
+    background-color: #F2B93E;
+    color: #241623;
+}
+
+.about-section .btn-download{
+    border-color: #241623;
+    border: solid 1px #212529;
+}
+
