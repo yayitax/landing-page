@@ -1,10 +1,13 @@
 /*General Styles*/
 
+
+
 html {
     font-family:Roboto;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
 
@@ -65,15 +68,12 @@ section {
     margin-bottom: 25px;
 }
 
-
-
 @media(min-width:1024px){
     .container {
         width: 1000px;
         
     }
 }
-
 
 @media (min-width:576px) {
     .container {
@@ -462,3 +462,43 @@ form .row:first-child .floating-label-form-group {
     font-size: 1.25rem
 }
 
+.footer{
+    color: #F9F9F9;
+    background-color: #241623;
+    padding: 20px;
+}
+
+.linkedin>p>a {
+    text-decoration: none;
+    color: #F9F9F9;
+
+}
+
+.copyright {
+    background-color: rgba(36, 22, 35, 0.9);
+   margin-bottom: 0px; 
+}
+
+.scroll-to-top{
+    /* z-index:1000;
+    right:1rem;
+    bottom:1rem;*/
+    display:none; 
+    position: fixed; 
+    bottom: 5px; 
+    right: 5px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: #212529;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px;
+}
+.scroll-to-top a{
+    color: #F9F9F9;
+}
+.scroll-to-top a:hover{
+    color: #F9F9F9;
+}

@@ -1,190 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/fontello.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- JS Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>Deja Brew</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/fontello.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- JS Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" href="/assets/img/DejaBrewLogoForDarkBg.png">
+
+  <title>Deja Brew</title>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1 class="icon-coffee"> Deja Brew </h1>
-            <input type="checkbox" id ="menu-bar">
-            <label class="icon-menu" for="menu-bar"></label>
-            <nav class="menu">
-                <a href="#products">Products</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
- 
-    <main>
-        <section class=" masthead start text-center d-flex align-items-center">
-            <div class="container d-flex align-items-center flex-column">
-                <img class="masthead-avatar start-img mb-5" src="assets/img/DejaBrewLogo.png" alt="">
-                <h1 class="text-uppercase mb-0">Deja Brew</h1>
-                <!-- Icon Divider -->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>            
-            </div>
-                <p>Chic french coffee shop at the heart of Tepic</p>    
-            </div>
-        </section>
 
-                <!-- Products Section -->
-        <section class="page-section products" id="products">
-            <div class="container">
-
-            <!-- Products Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase  mb-0">Our products</h2>
-
-            <!-- Icon Divider -->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <!-- Products Grid Items -->
-            <div class="row">
-
-                <!-- Products Item 1 -->
-                <div class="col-md-6 col-lg-4">
-                <div onclick="mostrarModal(0)"  class="products-item mx-auto">
-                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="products-item-caption-content text-center text-white">
-                        <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                    </div>
-                    <img class="imgFluid" src="./assets/img/coffee.jpg" alt="">
-                </div>
-                </div>
-
-                <!-- Products Item 2 -->
-                <div class="col-md-6 col-lg-4">
-                <div onclick="mostrarModal(1)"  class="products-item mx-auto">
-                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="products-item-caption-content text-center text-white">
-                        <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                    </div>
-                    <img class="imgFluid" src="./assets/img/baguettes.jpeg" alt="">
-                </div>
-                </div>
-
-                <!-- Products Item 3 -->
-                <div class="col-md-6 col-lg-4">
-                <div onclick="mostrarModal(2)"  class="products-item mx-auto">
-                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="products-item-caption-content text-center text-white">
-                        <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                    </div>
-                    <img class="imgFluid" src="./assets/img/tisanas.jpg" alt="">
-                </div>
-                </div>
-
-                <!-- Products Item 4 -->
-                <div class="col-md-6 col-lg-4">
-                <div onclick="mostrarModal(3)" class="products-item mx-auto">
-                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="products-item-caption-content text-center text-white">
-                        <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                    </div>
-                    <img class="imgFluid" src="./assets/img/burger.jpg" alt="">
-                </div>
-                </div>
-
-                <!-- Products Item 5 -->
-                <div class="col-md-6 col-lg-4">
-                <div onclick="mostrarModal(4)" class="products-item mx-auto">
-                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="products-item-caption-content text-center text-white">
-                        <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                    </div>
-                    <img class="imgFluid" src="./assets/img/lemonade.jpg" alt="">
-                </div>
-                </div>
-
-                <!-- Products Item 6 -->
-                <div class="col-md-6 col-lg-4">
-                <div onclick="mostrarModal(5)" class="products-item mx-auto">
-                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="products-item-caption-content text-center text-white">
-                        <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                    </div>
-                    <img class="imgFluid" src="./assets/img/pancakes.jpg" alt="">
-                </div>
-                </div>
-            </div>
+<body id="page-top">
+  <header>
+    <div class="container">
+      <h1 class="icon-coffee"> Deja Brew </h1>
+      <input type="checkbox" id="menu-bar">
+      <label class="icon-menu" for="menu-bar"></label>
+      <nav class="menu">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </section>
-</main>
+  </header>
 
-<div class="modal" tabindex="-1" role="dialog">
+  <main>
+    <section class=" masthead start text-center d-flex align-items-center">
+      <div class="container d-flex align-items-center flex-column">
+        <img class="masthead-avatar start-img mb-5" src="assets/img/DejaBrewLogo.png" alt="">
+        <h1 class="text-uppercase mb-0">Deja Brew</h1>
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <p>Chic french coffee shop at the heart of Tepic</p>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="page-section products" id="products">
+      <div class="container">
+
+        <!-- Products Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase  mb-0">Our products</h2>
+
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- Products Grid Items -->
+        <div class="row">
+
+          <!-- Products Item 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="mostrarModal(0)" class="products-item mx-auto">
+              <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="products-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="imgFluid" src="./assets/img/coffee.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Products Item 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="mostrarModal(1)" class="products-item mx-auto">
+              <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="products-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="imgFluid" src="./assets/img/baguettes.jpeg" alt="">
+            </div>
+          </div>
+
+          <!-- Products Item 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="mostrarModal(2)" class="products-item mx-auto">
+              <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="products-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="imgFluid" src="./assets/img/tisanas.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Products Item 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="mostrarModal(3)" class="products-item mx-auto">
+              <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="products-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="imgFluid" src="./assets/img/burger.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Products Item 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="mostrarModal(4)" class="products-item mx-auto">
+              <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="products-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="imgFluid" src="./assets/img/lemonade.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Products Item 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div onclick="mostrarModal(5)" class="products-item mx-auto">
+              <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="products-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="imgFluid" src="./assets/img/pancakes.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
 
-                 <h2 id="txtTitle" class="page-section-heading text-center text-uppercase  mb-0">
-                 The title
-                 </h2>
+          <h2 id="txtTitle" class="page-section-heading text-center text-uppercase  mb-0">
+            The title
+          </h2>
 
-                    <!-- Icon Divider -->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>            
-                </div>
-
-                <img  id="imgProduct" src="./assets/img/coffee.jpg" class="img-fluid imgModal">
-
-                <p class="textModal" id="txtDescription">
-                The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here.
-                </p>
-               
-                <div class="row">
-                    <div class="col-md-6 offset-md-4">
-                        <button class="btn btn-primary btnModal" href="#" data-dismiss="modal">
-                            <i class="fas fa-times fa-fw"></i>
-                            Close Window
-                        </button>
-                    </div>     
-                </div>
-               
+          <!-- Icon Divider -->
+          <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+              <i class="fas fa-star"></i>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="divider-custom-line"></div>
+          </div>
 
-<section class="about-section mb-0" id="about">
+          <img id="imgProduct" src="./assets/img/coffee.jpg" class="img-fluid imgModal">
+
+          <p class="textModal" id="txtDescription">
+            The description goes here The description goes here The description goes here The description goes here The
+            description goes here The description goes here The description goes here The description goes here The
+            description goes here The description goes here.
+          </p>
+
+          <div class="row">
+            <div class="col-md-6 offset-md-4">
+              <button class="btn btn-primary btnModal" href="#" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="about-section mb-0" id="about">
     <div class="container">
 
       <!-- About Section Heading -->
@@ -202,21 +213,25 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead text-justify">Come and enjoy a variety of coffee and food that will transport you all the way across the pond to the heart of France.</p>
-          <p class="lead text-justify">Our coffee is 100% locally sourced, and we showcase items from the best bakeries and patisseries in town.</p>
-          </div>
+          <p class="lead text-justify">Come and enjoy a variety of coffee and food that will transport you all the way
+            across the pond to the heart of France.</p>
+          <p class="lead text-justify">Our coffee is 100% locally sourced, and we showcase items from the best bakeries
+            and patisseries in town.</p>
+          <p class="lead text-justify">Find us on Uber Eats!</p>
+        </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead text-justify">We are quaintly located in Tepic’s Historic Downtown, near the State Capitol, down Mexico Avenue.</p>
+          <p class="lead text-justify">We are quaintly located in Tepic’s Historic Downtown, near the State Capitol,
+            down Mexico Avenue.</p>
           <p class="lead text-justify">Hours of Operation:</p>
           <p class="lead text-justify">Mon-Thurs: 8:00 am -10:00 pm<br>Fri-Sun: 10:00 am -1:00 am</p>
-          <p class="lead text-justify">Find us on Uber Eats!</p>
+
         </div>
       </div>
     </div>
   </section>
 
-   <!-- Contact Section -->
-   <section class="page-section" id="contact">
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
     <div class="container">
 
       <!-- Contact Section Heading -->
@@ -238,7 +253,8 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                <input class="form-control" id="name" type="text" placeholder="Name" required="required"
+                  data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -246,15 +262,18 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Email Address</label>
-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
+                  data-validation-required-message="Please enter your email address.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
-             <!--Phone Field-->
+            <!--Phone Field-->
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Phone Number</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" pattern="[0-9]+" minlength="10" maxlength="10" data-validation-required-message="Please enter your phone number.">
+                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"
+                  pattern="[0-9]+" minlength="10" maxlength="10"
+                  data-validation-required-message="Please enter your phone number.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -262,7 +281,8 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <textarea class="form-control" id="message" rows="3" placeholder="Message" required="required"
+                  data-validation-required-message="Please enter a message."></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -278,8 +298,68 @@
 
     </div>
   </section>
-</body>
-</html>
 
-<!--JS Modal-->
-<script src="./assets/js/modal.js"></script>
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Av. México Col. Centro
+            <br>Tepic Nay 63000</p>
+        </div>
+
+        <div class="linkedin col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Made with Love</h4>
+          <p>
+            <a href="https://wwww.linkedin.com/in/claudiaxcadena/?locale=en_US">
+              Claudia Ximena Cadena Flores
+            </a>
+          </p>
+          <p>
+            <a href="https://wwww.linkedin.com/in/luz-alejandra-gonzalez">
+              Luz Alejandra Gonzalez Rodriguez
+            </a>
+          </p>
+          <p>
+            <a href="https://wwww.linkedin.com/in/sergio-omar-velazquez-estrada-b10993197">
+              Sergio Omar Velazquez
+              Estrada
+            </a>
+            </p>
+
+        </div>
+
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About Deja Brew</h4>
+          <p class="lead mb-0">Chic French-inspired Coffee Shop in Tepic</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Deja Brew 2019</small>
+    </div>
+  </section>
+
+  <!-- <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class=".icon-up-big"></i>To top
+    </a>
+  </div> -->
+
+  <div class="scroll-to-top">
+    <a href="#page-top">
+      <i class="icon-up-big"></i>
+    </a>
+  </div>
+
+
+  <!--JS Modal-->
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/scroll.js"></script>
+</body>
+
+</html>
