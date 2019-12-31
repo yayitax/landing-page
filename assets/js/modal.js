@@ -1,7 +1,7 @@
 var products =[
     {
         title:"Coffee",
-        description:"Express,Cappuccino,Macchiato & Latte" ,
+        description:"Expresso, Cappuccino, Macchiato, & Latte" ,
         img:"./assets/img/coffee.jpg"
     },
 
@@ -18,13 +18,13 @@ var products =[
     },
 
     {
-        title:"Burguer",
-        description:"Artisan Burger " ,
+        title:"Burger",
+        description:"Artisan Burger" ,
         img:"./assets/img/burger.jpg"
     },
 
     {
-        title:"Lemodane",
+        title:"Lemonade",
         description:"Pink lemonade" ,
         img:"./assets/img/lemonade.jpg"
     },
