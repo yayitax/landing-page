@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background: #F9F9F9;
 }
 
 header {
@@ -31,6 +32,13 @@ h1 {
 
 header .container {
     display: table;
+}
+header .start-img{
+    width: 15rem;
+}
+header .start{
+    height: 600px;
+    color: #241623;
 }
 
 section {
@@ -108,3 +116,14 @@ header label {
 
     }
 }
+
+.star-icon{
+    font-size: 1.5em;
+}
+.line-left, .line-right {
+    background-color: #241623;
+    border-radius: 2px;
+    height: 4px; 
+    width: 200px;    
+    
+  } 
