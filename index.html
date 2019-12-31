@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/fontello.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Deja Brew</title>
 </head>
 <body>
@@ -16,31 +24,167 @@
             <input type="checkbox" id ="menu-bar">
             <label class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
-                <a href="">Products</a>
+                <a href="#products">Products</a>
                 <a href="">About</a>
                 <a href="">Contact</a>
             </nav>
         </div>
-
-        <div class="start text-center d-flex align-items-center">
+    </header>
+ 
+    <main>
+        <section class=" masthead start text-center d-flex align-items-center">
             <div class="container d-flex align-items-center flex-column">
-                <img class="start-img mb-4" src="assets/img/DejaBrewLogo.png" alt="">
-                <h1 class="text-uppercase mb-5">Deja Brew</h1>
-    
-                <div class="d-flex justify-content-center align-items-center mb-4">
-                    <div class="line-left "></div>
-                    <div class="star-icon mx-3">
-                        <i class="icon-star"></i>                      
-                    </div>
-                    <div class="line-right "></div>
+                <img class="masthead-avatar start-img mb-5" src="assets/img/DejaBrewLogo.png" alt="">
+                <h1 class="text-uppercase mb-0">Deja Brew</h1>
+                <!-- Icon Divider -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
                 </div>
-                <p>Chic french coffee shop at the heart of Tepic</p>          
-                
+                <div class="divider-custom-line"></div>            
+            </div>
+                <p>Chic french coffee shop at the heart of Tepic</p>    
+            </div>
+        </section>
+
+                <!-- Products Section -->
+        <section class="page-section products" id="products">
+            <div class="container">
+
+            <!-- Products Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase  mb-0">Our products</h2>
+
+            <!-- Icon Divider -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
             </div>
 
+            <!-- Products Grid Items -->
+            <div class="row">
+
+                <!-- Products Item 1 -->
+                <div class="col-md-6 col-lg-4">
+                <div onclick="mostrarModal(0)"  class="products-item mx-auto">
+                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="products-item-caption-content text-center text-white">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                    </div>
+                    <img class="imgFluid" src="./assets/img/coffee.jpg" alt="">
+                </div>
+                </div>
+
+                <!-- Products Item 2 -->
+                <div class="col-md-6 col-lg-4">
+                <div onclick="mostrarModal(1)"  class="products-item mx-auto">
+                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="products-item-caption-content text-center text-white">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                    </div>
+                    <img class="imgFluid" src="./assets/img/baguettes.jpeg" alt="">
+                </div>
+                </div>
+
+                <!-- Products Item 3 -->
+                <div class="col-md-6 col-lg-4">
+                <div onclick="mostrarModal(2)"  class="products-item mx-auto">
+                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="products-item-caption-content text-center text-white">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                    </div>
+                    <img class="imgFluid" src="./assets/img/tisanas.jpg" alt="">
+                </div>
+                </div>
+
+                <!-- Products Item 4 -->
+                <div class="col-md-6 col-lg-4">
+                <div onclick="mostrarModal(3)" class="products-item mx-auto">
+                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="products-item-caption-content text-center text-white">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                    </div>
+                    <img class="imgFluid" src="./assets/img/burger.jpg" alt="">
+                </div>
+                </div>
+
+                <!-- Products Item 5 -->
+                <div class="col-md-6 col-lg-4">
+                <div onclick="mostrarModal(4)" class="products-item mx-auto">
+                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="products-item-caption-content text-center text-white">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                    </div>
+                    <img class="imgFluid" src="./assets/img/lemonade.jpg" alt="">
+                </div>
+                </div>
+
+                <!-- Products Item 6 -->
+                <div class="col-md-6 col-lg-4">
+                <div onclick="mostrarModal(5)" class="products-item mx-auto">
+                    <div class="products-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="products-item-caption-content text-center text-white">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                    </div>
+                    <img class="imgFluid" src="./assets/img/pancakes.jpg" alt="">
+                </div>
+                </div>
+            </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+
+                 <h2 id="txtTitle" class="page-section-heading text-center text-uppercase  mb-0">
+                 The title
+                 </h2>
+
+                    <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>            
+                </div>
+
+                <img  id="imgProduct" src="./assets/img/coffee.jpg" class="img-fluid imgModal">
+
+                <p class="textModal" id="txtDescription">
+                The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here The description goes here.
+                </p>
+               
+                <div class="row">
+                    <div class="col-md-6 offset-md-4">
+                        <button class="btn btn-primary btnModal" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                        </button>
+                    </div>     
+                </div>
+               
+            </div>
         </div>
-
-
-    </header>
+    </div>
+</div>
 </body>
 </html>
+
+<!--JS Modal-->
+<script src="./assets/js/modal.js"></script>
